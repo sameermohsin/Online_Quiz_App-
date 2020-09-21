@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="title">Online Quiz Application</h1>
+    <div class="main">
+        <h1 class="heading">Final Result</h1>
+    </div>
+    <div class="final" id="final">
+
+    </div><br>
+    <div class="result" id="rest">
+        <!-- Your Name: Sameer
+        <br> Your Score: 80%
+        <br> Total Time: 05:00
+        <br> Time Taken: 00:05 -->
+    </div>
+    <button class="attempt" onclick="again()">Attemp Quiz Again</button>
+</body>
+<script src="app.js"></script>
+<script>
+    var rest = document.getElementById("rest")
+    rest.innerHTML = `<div class="result" id="rest">
+    Your Name: ${name.value}
+    <br> Your Score: 80%
+    <br> Total Time: 05:00
+    <br> Time Taken: ${seconds}
+</div>`
+</script>
+
+</html>
